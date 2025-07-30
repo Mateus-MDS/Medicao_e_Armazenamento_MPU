@@ -1,42 +1,42 @@
 Data Logger com MPU6050 e Raspberry Pi Pico
 
-DescriÁ„o:
+Descri√ß√£o:
 
-Sistema de aquisiÁ„o de dados de movimento usando sensor MPU6050 (acelerÙmetro + giroscÛpio) com armazenamento em cart„o SD e interface OLED. Projeto ideal para monitoramento de vibraÁ„o e an·lise de movimento.
+Sistema de aquisi√ß√£o de dados de movimento usando sensor MPU6050 (aceler√¥metro + girosc√≥pio) com armazenamento em cart√£o SD e interface OLED. Projeto ideal para monitoramento de vibra√ß√£o e an√°lise de movimento.
 
 Componentes Principais:
 
 BitDogLab
 Sensor MPU6050
-suporte para cart„o SD
-Cart„o SD
+suporte para cart√£o SD
+Cart√£o SD
 
 Funcionalidades:
 
-Leitura de dados do MPU6050 (aceleraÁ„o, giroscÛpio, ‚ngulos)
-Armazenamento em CSV no cart„o SD (10Hz padr„o)
-VisualizaÁ„o em tempo real no display OLED
-Controle por botıes e terminal serial
+Leitura de dados do MPU6050 (acelera√ß√£o, girosc√≥pio, √¢ngulos)
+Armazenamento em CSV no cart√£o SD (10Hz padr√£o)
+Visualiza√ß√£o em tempo real no display OLED
+Controle por bot√µes e terminal serial
 Sistema de alertas com LEDs e buzzer
 
-Conexıes:
+Conex√µes:
 
 MPU6050: I2C0 (GPIO0-SDA, GPIO1-SCL)
 OLED: I2C1 (GPIO14-SDA, GPIO15-SCL)
-Bot„o A: GPIO5 (inicia/para captura)
-Bot„o B: GPIO6 (monta/desmonta SD)
+Bot√£o A: GPIO5 (inicia/para captura)
+Bot√£o B: GPIO6 (monta/desmonta SD)
 LEDs: GPIO11 (verde), GPIO12 (azul), GPIO13 (vermelho)
 Buzzer: GPIO21
-Cart„o SD: Interface SPI
+Cart√£o SD: Interface SPI
 
 Comandos via Terminal Serial (115200 baud):
 
-a - Montar cart„o SD
-b - Desmontar cart„o SD
+a - Montar cart√£o SD
+b - Desmontar cart√£o SD
 c - Listar arquivos
 d - Ler arquivo CSV (ex: d mpu_data.csv)
-e - Ver espaÁo livre
-f - Formatar cart„o SD
+e - Ver espa√ßo livre
+f - Formatar cart√£o SD
 g - Ajuda (lista comandos)
 h - Iniciar captura
 i - Parar captura
@@ -48,7 +48,7 @@ Sample,AccelX,AccelY,AccelZ,GyroX,GyroY,GyroZ,Roll,Pitch
 0,0.12,-0.45,0.98,1.23,-5.67,9.01,12.34,56.78
 1,0.11,-0.22,0.33,4.44,-5.55,6.66,11.11,22.22
 Estados do Sistema
-InicializaÁ„o: LEDs piscam
+Inicializa√ß√£o: LEDs piscam
 
 SD montado: LED azul
 Captura ativa: LEDs azul+vermelho
@@ -57,9 +57,8 @@ Erro: LED vermelho + buzzer
 Como Usar:
 
 Conectar componentes conforme diagrama
-Inserir cart„o SD formatado
+Inserir cart√£o SD formatado
 Gravar firmware no Pico
-Controlar via botıes ou terminal serial
+Controlar via bot√µes ou terminal serial
 
-Link Github: 
-Link Video:
+Link Github: https://github.com/Mateus-MDS/Medicao_e_Armazenamento_MPU.git
